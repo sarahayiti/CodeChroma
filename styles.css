@@ -1,0 +1,87 @@
+:root {
+  --color0: #ff0000;
+  --color1: #ff6600;
+  --color2: #ffcc00;
+  --color3: #99cc00;
+  --color4: #33cc33;
+  --color5: #009933;
+  --solid-border: 2px solid #333;
+  --dashed-border: 2px dashed #666;
+}
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+#legend {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+#legend-gradient {
+  width: 200px;
+  height: 20px;
+  background-image: linear-gradient(
+    90deg,
+    var(--color0) 0% 17%,
+    var(--color1) 17% 34%,
+    var(--color1) 34% 50%,
+    var(--color2) 50% 67%,
+    var(--color2) 67% 83%
+    var(--color3) 83% 100%)
+    
+};
+
+table {
+  width: 100%;
+  height: 85vh;
+  border-collapse: collapse;
+}
+
+td {
+  width: 150px;
+  height: 80px;
+  text-align: center;
+}
+
+th {
+  height: 60px;
+  font-size: 1.2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b6cfc0;
+  font-family: Arial, sans-serif;
+}
